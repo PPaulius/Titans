@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h2>{{ page_title }}</h2>
+<!-- Apsirašom patį klaną -->
+<p>The "Titans" clan has a rich history, having been active in Lineage2 since 2004. Over the years, they have experienced both good and bad times, but their members remain dedicated and determined to succeed.</p>
+
+    <p>The clan's values include loyalty to their fellow members, a strong pursuit of power, and an unwavering determination and willpower. They believe that these values are essential to achieving their ultimate goal, which is to conquer all challenges that come their way.</p>
+    
+    <p>Despite facing many obstacles and setbacks, the "Titans" clan continues to push forward, always striving to improve and reach new heights of success. With their unbreakable bond and shared sense of purpose, they are a force to be reckoned with in the world of Lineage2.</p>
+
+{% for member in company_data %}
+<!-- Paimam informaciją apie visus narius iš company.json ir suskirstom atskirais blokais, išstumdom į skirtingas kiekvieną, bei pasidarom linijas tarp atskirų blokų -->
+<div class="row featurette">
+    {% if loop.index % 2 != 0 %}
+    <div class="col-md-7">
+        <h3><a href="/about/{{ member.url }}">{{ loop.index }}. {{ member.name }}</a></h3>
+        <p>{{ member.description }}</p>
+    </div>
+    <div class="col-md-5">
+        <img class="featurette-image img-responsive" src="{{ member.image_source }}"  alt="Picture of {{member.name}}" />
+    </div>
+    {% else %}
+    <div class="col-md-5">
+        <img class="featurette-image img-responsive" src="{{ member.image_source }}"  alt="Picture of {{member.name}}" />
+    </div>
+    <div class="col-md-7">
+        <h3><a href="/about/{{ member.url }}">{{ loop.index }}. {{ member.name }}</a></h3>        
+        <p>{{ member.description }}</p>
+    </div>
+    {% endif %}
+</div>
+    {% if loop.index != 4 %}
+    <hr class="featurette-divider">
+{% endif %}
+{% endfor %}
+{% endblock %}

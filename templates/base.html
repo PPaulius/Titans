@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Titans</title>
+        <!-- Panaudojam stiliaus patobulinimo failus -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}"/>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/clean-blog.min.css') }}"/>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+    </head>
+    
+    <!-- Pasidarom viršutinę meniu eilutę -->
+    <body>
+         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="{{ url_for('index') }}">Lineage2 clan "Titans"</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('about') }}">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('contact') }}">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('careers') }}">Careers</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Puslapio header'is -->
+    <header class="masthead" style="background-image: url('https://forum.lineage2dex.com/data/attachments/4/4128-80974e2b29f5f0dceeb86285ee9ec98e.jpg')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="site-heading">
+              <h1>Titans</h1>
+              <span class="subheading">Welcome to Titans' official clan website</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Pagrindinio puslapio srautas -->
+    <div class="container">
+      {% block content %}
+      {% endblock %}
+    </div>
+
+    <hr>
+
+    <!-- Puslapio apatinė dalis -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <p class="copyright text-muted">Copyright &copy; Your Website 2023</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Įsikeliam jquery ir bootstrap bibliotekas -->
+    <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/clean-blog.min.js') }}"></script>
+    </body>
+</html>

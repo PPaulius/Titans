@@ -1,0 +1,25 @@
+[{
+        "name": "Clan Leader, xChaosMakerx",
+        "description": "The Clan Leader, nicknamed xChaosMakerx, has been leading the Titans clan since its inception. He is a principled and resolute individual who enjoys fierce battles and wars with other clans. The main objective of The Clan leader is to conquer one castle and rule them all.",
+        "image_source": "https://i.servimg.com/u/f73/12/93/35/05/tm/warcry10.jpg",
+        "url": "clanleader"
+    },
+    {
+        "name": "Underboss, Evil",
+        "description": "The Underboss, nicknamed Evil, is an inner circle member of the Titans clan and is responsible for maintaining order within the clan. He is strict but fair, and his led party groups strike fear into all other clans.",
+        "image_source": "https://www.teahub.io/photos/full/201-2019969_lineage-ii-dark-elf.jpg",
+        "url": "evil"
+    },
+    {
+        "name": "Treasurer, GizmoL",
+        "description": "The Treasurer, nicknamed GizmoL, is also an inner circle member of the Titans clan and is responsible for crafting items and supplying clan members. The clan's warhouse falls under his jurisdiction.",
+        "image_source": "https://i.ytimg.com/vi/i7JPYlMwC_0/maxresdefault.jpg",
+        "url": "gizmol"
+    },
+    {
+        "name": "The Highest Healer, Bishop",
+        "description": "The Treasurer, nicknamed Bishop, is another inner circle member of the Titans clan and is responsible for training healers and support characters for clan activities. He is also responsible for integrating new members into the clan's operations.",
+        "image_source": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e296e1cb-a6ce-46db-9d68-d7cf2a5fbb50/d6qkq1a-7431195f-dafe-4f24-aa75-971d8d88e527.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2UyOTZlMWNiLWE2Y2UtNDZkYi05ZDY4LWQ3Y2YyYTVmYmI1MFwvZDZxa3ExYS03NDMxMTk1Zi1kYWZlLTRmMjQtYWE3NS05NzFkOGQ4OGU1MjcucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.3a9AMuYsZZ6guZci09lhAebePo34LOg8kcvZ_Dqhc7o",
+        "url": "bishop"
+    }
+]
